@@ -1,0 +1,41 @@
+Context : (Nb : seulement web service)
+    La société Mada-immo gère des biens immobiliers pour ses clients propriétaires (particuliers ou entreprise)
+    Le propriétaires (particulier ou professionnel) possède un ou plusieurs biens immobiliers
+    Le client locataire (particulier ou professionnel) loue ces biens immobiliers chez Mada-immo
+
+    Mada-immo prélève des commissions mensuels sur la locations
+
+    Important : 
+    Une location se fait chaque mois , un mois entamé doit etre payé entièrement 
+    Ex : 3 février au 1er mars correspond à 2 mois de location ( février et mars)
+
+    Mada-immo souhaite mettre en place une application web pour gérer son activité 
+
+    Il y a 2 profils : 
+        . Amdin (mada-immo )
+        . Propriétaire 
+        . Client 
+
+    Rappel contenu technique 
+        . Langage au choix mais obligation d'utiliser un framework MVC
+        . Bas de données relationnels au choix ( Pas de Nosql )
+
+    Travail à faire
+    
+    [ ] Profil (Admin)
+        . Il se connecte avec un login et un mot de passe
+        . Insérer directement dans la base 
+            . les biens : nom , desription , region, loyer par mois , une ou plusieurs  photos , propriétaire 
+            . Type de bien (maison , appartement , villa , immeuble , ...) 
+                . mettre commission par type de bien (en %)
+            . location de bien client , une durr e à exprimer en mois , avec une date de début (qui n'est par forcéent le début du  mois )
+        [] WEB-SERVICE 
+            . page pour afficher le chiffre d'affaire et les gains par mois de MADA-IMMO (filtre entre 2 dates)
+    [ ] Profil Propriétaire 
+        . se connecter avec numéro de tel 
+        [] WEB-SERVICE : page pour voir la liste de ses biens 
+        [] WEB-SERVICE : page pour voir son chiffre d'affaire entre 2 date (il peut mettre une date du futur )
+    [] Profil Client 
+        . se connecter avec son email uniquement 
+        [] WEB-SERVICE : page pour voir loyer (à payer ou payé ) entre 2 dates (il peut mettre une date du futur) 
+  
